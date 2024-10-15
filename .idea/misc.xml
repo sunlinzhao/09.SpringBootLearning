@@ -16,6 +16,7 @@
         <option value="$PROJECT_DIR$/springboot_mybatis_plus/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_mybatisplus_generator_swagger/pom.xml" />
         <option value="$PROJECT_DIR$/springboot_thymeleaf/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_redis/pom.xml" />
       </list>
     </option>
   </component>

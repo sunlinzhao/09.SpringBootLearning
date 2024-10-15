@@ -1,0 +1,25 @@
+# springboot
+spring:
+  # redis 配置
+  redis:
+    port: 6379
+    host: 172.27.24.200
+    # 客户端类型，默认lettuce，这里改为jedis
+    # 区别在于 jedis 是单线程，而lettuce 是多线程
+    client-type: jedis
+  # 数据源配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8
+    username: root
+    password: root
+
+
+# mybatis-plus 配置
+mybatis-plus:
+  configuration:
+    # 打印sql
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 别名
+  type-aliases-package: com.slz.redis.entity
+  # 扫描 mapper.xml
+  mapper-locations: classpath:mapper/*.xml

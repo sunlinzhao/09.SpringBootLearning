@@ -18,6 +18,7 @@
         <module name="springboot_mybatisplus_generator_swagger" />
         <module name="springboot_Junit" />
         <module name="spring_mybatis_plus" />
+        <module name="springboot_redis" />
         <module name="mybatis_plus" />
         <module name="springboot_thymeleaf" />
         <module name="springboot_create_3" />
