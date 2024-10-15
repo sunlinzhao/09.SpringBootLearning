@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.slz.thymeleaf.mapper.ParamsMapper">
+
+    <resultMap id="BaseResultMap" type="com.slz.thymeleaf.entity.Params">
+            <id property="id" column="id" jdbcType="BIGINT"/>
+            <result property="code" column="code" jdbcType="INTEGER"/>
+            <result property="name" column="name" jdbcType="VARCHAR"/>
+            <result property="del" column="del" jdbcType="INTEGER"/>
+            <result property="version" column="version" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,code,name,
+        del,version
+    </sql>
+</mapper>

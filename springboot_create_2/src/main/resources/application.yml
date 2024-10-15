@@ -1,0 +1,10 @@
+server:
+  port: 7777
+
+spring:
+  data:
+    cassandra:
+      compression: lz4
+      keyspace-name: test
+      contact-points: localhost
+

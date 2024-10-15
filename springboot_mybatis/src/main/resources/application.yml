@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+# 配置数据库连接相关属性
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: root
+
+# 配置 mvc, swagger3 的匹配策略
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+# 配置 devtools
+  devtools: # 默认为 true, 作用：设置自动重启, 为 false 时关闭自动重启
+    add-properties: false
+    restart:
+      exclude: static/**, templates/**, public/** # 排除重启的文件
+# 配置 mybatis 控制台日志
+mybatis:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  # 配置 mapper 文件位置
+  mapper-locations: classpath:mapper/*.xml
+  # 配置实体类包位置
+  type-aliases-package: com.slz.springboot.entity
+pagehelper:
+  auto-dialect: true # 自动识别数据库类型

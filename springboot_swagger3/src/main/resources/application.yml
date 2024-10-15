@@ -1,0 +1,16 @@
+spring:
+  devtools: # 默认为 true, 作用：设置自动重启, 为 false 时关闭自动重启
+    add-properties: true
+    restart:
+      exclude: static/**, templates/**, public/** # 排除重启的文件
+  banner:
+        location: classpath:banner.txt
+#    image:
+#      location: classpath:banner.png
+  mvc:
+    pathmatch:
+      # 默认策略：PathPatternParser，更严格且功能强大。
+      # 传统策略：AntPathMatcher，更宽松且易于理解。
+      # 1. 迁移旧项目：如果你正在从旧版本的Spring Boot迁移到新版本，可能需要使用AntPathMatcher以保持一致的行为。
+      # 2. 解决特定问题：如果你遇到某些路径匹配问题，可以尝试使用AntPathMatcher来简化匹配逻辑。
+      matching-strategy: ant_path_matcher

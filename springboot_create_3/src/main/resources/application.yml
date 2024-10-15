@@ -1,0 +1,54 @@
+spring:
+  profiles:
+    active: dev
+
+sysUser: 张三 # String
+age: 22 # int
+money: 3145.12 # double
+birthday: 2019/01/01 # Date, 默认格式：yyyy/MM/dd，其它格式则不能转换
+
+# 对象
+com:
+  slz:
+    springboot:
+      model:
+        users:
+          user-name: 张三
+          gender: 男
+          age: 22
+          money: 3145.12
+          birthday: 2019/01/01
+
+# collect
+collect:
+  # list
+  list1:
+    - 张三
+    - 22
+    - 3145.12
+    - 2019/01/01
+  list2: [张三, 22, 3145.12, 2019/01/01]
+  # set
+  set1:
+    - A
+    - B
+    - C
+    - A
+  set2: [A, B, C, A]
+  # map
+  map1:
+    k1: v1
+    k2: v2
+    k3: v3
+  map2: {k1: v1, k2: v2, k3: v3}
+
+oc:
+  # obj
+  stus1:
+    - name: 张三
+      age: 22
+    - name: 李四
+      age: 23
+  stus2:
+    - { "name": "张三", "age": 22 }
+    - { "name": "李四", "age": 23 }

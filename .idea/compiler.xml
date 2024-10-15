@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/mybatis_plus/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="springboot_create_2" />
+        <module name="springboot_create_1" />
+        <module name="springboot_swagger3" />
+        <module name="springboot_mybatis_plus" />
+        <module name="springboot_mybatis" />
+        <module name="springboot_mybatisplus_generator_swagger" />
+        <module name="springboot_Junit" />
+        <module name="spring_mybatis_plus" />
+        <module name="mybatis_plus" />
+        <module name="springboot_thymeleaf" />
+        <module name="springboot_create_3" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="springboot_create_1" options="-parameters" />
+      <module name="springboot_create_2" options="-parameters" />
+    </option>
+  </component>
+</project>

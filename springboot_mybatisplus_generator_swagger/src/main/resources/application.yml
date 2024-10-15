@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/test?serverTimezone=GMT%2B8
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    pathmatch:
+      # 作用：修改匹配策略，swagger 3.0.0 默认使用 PathPatternParser, 修改是因为3.0.0 版本不兼容
+      matching-strategy: ant_path_matcher
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml # 扫描 mapper.xml
+  type-aliases-package: com.slz.springboot.entity # 扫描 entity, 别名

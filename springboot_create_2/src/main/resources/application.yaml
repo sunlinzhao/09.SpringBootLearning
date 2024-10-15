@@ -1,0 +1,10 @@
+server:
+  port: 8888
+
+spring:
+  data:
+    cassandra:
+      compression: lz4
+      keyspace-name: test
+      contact-points: localhost
+

@@ -1,0 +1,12 @@
+# 开发环境
+server:
+  port: 8080
+
+users:
+  customer:
+    url: localhost:${server.port}
+
+teacher:
+  id: ${random.uuid}
+  age: ${random.int(30,50)}
+  money: ${random.double(100,200)}

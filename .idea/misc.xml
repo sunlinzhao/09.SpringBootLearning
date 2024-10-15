@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/springboot_create_1/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_create_2/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_create_3/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_swagger3/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_Junit/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/spring_mybatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_mybatisplus_generator_swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_thymeleaf/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
